@@ -23,6 +23,6 @@ public class Auto {
 	}
 	
 	private boolean isNotOriginal(Asiento asiento) {
-		return !(asiento.registro == motor.registro && asiento.registro == registro);
+		return !(asiento != null && asiento.registro == motor.registro && asiento.registro == registro);
 	}
 }
